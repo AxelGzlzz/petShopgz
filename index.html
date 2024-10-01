@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ropa de mascotas,alimentos de mascotas,accesorios">
+   <meta name="author" content="gonzalez axel , martinez facundo,pereyra guada,villegas rocio"> 
+   <meta name="keywords" content="ropa de mascotas,alimentos de mascotas,accesorios">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Petshop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary-subtle">
+        <div class="container container-lg">
+          <a class="navbar-brand mx-lg-2" href="./index.html">
+            <img
+              src="./img/img facu/logo pets.jpg"
+              class="d-inline-block imglogo rounded"
+              alt="Logo"
+            />
+            Petshop
+          </a>
+          <button
+            class="navbar-toggler mx-sm-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#barradeNavegacion"
+            aria-controls="barradeNavegacion"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-xl-5" id="barradeNavegacion">
+            <ul
+              class="navbar-nav d-flex flex-column flex-md-column flex-lg-row"
+              id="barradeNavegacion"
+            >
+              <ul
+                class="navbar-nav align-items-start align-items-md-start ms-md-3 my-md-3 align-items-lg-center mx-lg-1 my-lg-1 ms-lg-5"
+              >
+                <li class="nav-item mx-3 mx-md-1 py-lg-1 mx-lg-0">
+                  <a
+                    class="nav-link active py-lg-1"
+                    aria-current="page"
+                    href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item dropdown mx-3 mx-md-1 py-lg-1 mx-lg-0">
+                  <a
+                    class="nav-link dropdown-toggle btn btn-outline-primary"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    id="MenuDeCategorias"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Productos</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="MenuDeCategorias">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./pages/categoriasPerros.html"
+                        >Perros</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./pages/categoriasGatos.html"
+                        >Gatos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/Error404.html"
+                        >Loros</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/Error404.html"
+                        >Pez</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/Error404.html"
+                        >Caballo</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./pages/Error404.html"
+                        >Hamster</a
+                      >
+                    </li>
+
+                  </ul>
+                </li>
+                <li class="nav-item mx-3 mx-md-1 mx-lg-0 mx-lg-0">
+                  <a
+                    class="nav-link btn btn-outline-primary text-md-start"
+                    type="button"
+                    href="./pages/Contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item mx-3 mx-md-1">
+                  <a
+                    class="nav-link btn btn-outline-primary py-lg-0"
+                    type="button"
+                    href="./pages/Nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+              </ul>
+
+              <form
+                class="d-flex me-5 me-md-5 ms-md-2 pt-md-3 align-items-lg-center mx-lg-2 py-lg-2"
+                role="search"
+              >
+                <input
+                  class="form-control mx-2 mx-lg-0"
+                  type="search"
+                  placeholder="Buscar productos"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-secondary ms-2" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+
+              <ul
+                class="navbar-nav align-items-start align-items-md-start ms-md-3 mt-md-3 mb-md-2 align-items-lg-center m-lg-2 px-lg-1"
+              >
+                <li class="nav-item mx-3 mx-md-1 mb-md-2 my-lg-1 mx-lg-2">
+                  <a
+                    class="nav-link btn btn-outline-primary px-4 px-md-4 py-lg-2 px-lg-3"
+                    type="button"
+                    href="./pages/Carrito.html"
+                    ><i class="bi bi-cart3"></i
+                  ></a>
+                </li>
+
+                <li
+                  class="nav-item nav-item mx-3 mx-md-1 mb-md-2 my-lg-1 mx-lg-2"
+                >
+                  <button
+                    class="btn btn-outline-primary px-4 px-md-4 py-lg-2 px-lg-3"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalInicio"
+                  >
+                    <i class="bi bi-person"></i>
+                  </button>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-primary-subtle">
+      <seccion
+        id="carouselPromociones"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/caorusel/2.webp"
+              class="d-block w-100 imagenCarousel"
+              alt="promociones"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/caorusel/1.webp "
+              class="d-block w-100 imagenCarousel"
+              alt="promociones"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/caorusel/R.jpeg"
+              class="d-block w-100 imagenCarousel"
+              alt="oferta"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselPromociones"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselPromociones"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </seccion>
+
+      <section class="container pt-2 mt-5 bg-info-subtle rounded-5">
+        <div class="row justify-content-center">
+          <div class="col-md-4 bordesMetodDepago">
+            <div class="d-block text-center">
+              <i class="bi bi-cash-coin fs-1 text-success-emphasis"></i>
+              <h5>Descuentos</h5>
+              <p>Pagando En Efectivo!.</p>
+            </div>
+          </div>
+          <div class="col-md-4 bordesMetodDepago">
+            <div class="d-block text-center">
+              <i class="bi bi-truck fs-1 text-success-emphasis"></i>
+
+              <h5>Envios Sin cargo</h5>
+              <p>En Todo Tucuman.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-block text-center">
+              <i
+                class="bi bi-credit-card-2-back fs-1 text-success-emphasis"
+              ></i>
+
+              <h5>Medios De Pago</h5>
+              <p>
+                Aceptamos pagos en efectivo y Con <br />Tarjetas de
+                Debito/Credito.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-info-subtle mt-5 pb-5">
+        <section class="container mt-5 pt-4">
+          <h3
+            class="text-white text-md-start py-1 border-bottom border-bottom-3"
+          >
+            Categorias Disponibles:
+          </h3>
+          <seccion class="mt-5">
+            <div class="row">
+              <div class="col-md-2 my-4 col-6">
+                <a
+                  href="./pages/categoriasPerros.html"
+                  class="link-primary-emphasis"
+                  ><img
+                    src="./img/categoria/2.jpg"
+                    alt="perro"
+                    class="w-100 h-100 rounded-5"
+                  />
+                  <div class="d-block text-center">
+                    <h3>Perro</h3>
+                  </div></a
+                >
+              </div>
+
+              <div class="col-md-2 my-4 col-6">
+                <a
+                  href="./pages/categoriasGatos.html"
+                  class="link-primary-emphasis"
+                >
+                  <img
+                    src="./img/categoria/3.jpg"
+                    alt="gato"
+                    class="w-100 h-100 rounded-5"
+                  />
+                  <div class="d-block text-center">
+                    <h3>Gato</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-2 my-4 col-6">
+                <a href="./pages/Error404.html" class="link-primary-emphasis">
+                  <img
+                    src="./img/categoria/1.jpg"
+                    alt="loro"
+                    class="w-100 h-100 rounded-5"
+                  />
+                  <div class="d-block text-center">
+                    <h3>Loro</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-2 my-4 col-6">
+                <a href="./pages/Error404.html" class="link-primary-emphasis">
+                  <img
+                    src="./img/categoria/4.jpg"
+                    alt="pez"
+                    class="w-100 h-100 rounded-5"
+                  />
+                  <div class="d-block text-center">
+                    <h3>Pez</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-2 my-4 col-6">
+                <a href="./pages/Error404.html" class="link-primary-emphasis">
+                  <img
+                    src="./img/categoria/5.png"
+                    alt="CABALLO"
+                    class="w-100 h-100 rounded-5"
+                  />
+                  <div class="d-block text-center">
+                    <h3>Caballo</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-2 my-4 col-6">
+                <a href="./pages/Error404.html" class="link-primary-emphasis">
+                  <img
+                    src="./img/categoria/6.png"
+                    alt="HANSTER"
+                    class="w-100 h-100 rounded-5"
+                  />
+                  <div class="d-block text-center">
+                    <h3>Hamster</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </seccion>
+        </section>
+      </section>
+
+      <img
+        src="./img/promociones/promocion2.webp"
+        class="d-block w-100 imagenPromocionespremios container mt-5 d-none d-md-block"
+        alt="promociones"
+      />
+
+      <h3
+        class="container text-md-start text-center py-1 border-bottom my-5 mt-3"
+      >
+        Articulos Destacados :
+      </h3>
+
+      <section
+        id="articulosdestacados"
+        class="carousel slide bg-info-subtle pt-1 mb-5"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active my-5">
+            <h4 class="container text-md-start py-1 border-bottom text-white">
+              Alimentos Mas Buscados:
+            </h4>
+            <section class="container mt-2 mb-5 pb-3 justify-content-center">
+              <div class="row">
+                <div class="col-md-3 my-4 col-6">
+                  <div
+                    class="rounded-3 border border-3 border-primary-subtle pb-4 pb-md-0"
+                  >
+                    <a href="#">
+                      <img
+                        src="./img/imagesmarcas/perro.png"
+                        alt="perro"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">PERRO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Purina | Pro plan
+                      </h5>
+                      <p class="d-block text-center text-white">$11.950,64</p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>3.983,55
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="/img/imagesmarcas/gato.png"
+                        alt="gato"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">GATO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Purina | Cat Chow
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>10.450,64
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>3.483,55
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/imagesmarcas/loro.png"
+                        alt="loro"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">LORO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Super Premium | Vit Pro
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>7.500,00
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>2.500,00
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/imagesmarcas/pez.png"
+                        alt="pez"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">PEZ</h6>
+                      <h5 class="d-block text-center text-white">
+                        TetraMin | Tropical
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>9.550,65
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>3.183,55
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 bg-info-subtle col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/imagesmarcas/caballo.png"
+                        alt="CABALLO"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">CABALLO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Equitonik | Premium
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>12.464,10
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>4.154,7
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/imagesmarcas/hamster.png"
+                        alt="HANSTER"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">HAMSTER</h6>
+                      <h5 class="d-block text-center text-white">
+                        RedKite | Hamster
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>8.000,25
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>2.666,75
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item">
+            <h4
+              class="container text-md-start py-1 text-white border-bottom border-black"
+            >
+              Ropas Mas Buscadas:
+            </h4>
+
+            <section class="container mt-2 mb-5 pb-3 justify-content-center">
+              <div class="row">
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/accesoriosanimales/buzoverde.png"
+                        alt="buzo de perro"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">PERRO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Dino Buzo De Algodon
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>40.259,99
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>13.419,99
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="/img/accesoriosanimales/buzocat.png"
+                        alt="buzo de rayas gato"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">GATO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Buzo Fino con Rayas
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>15.400,00
+                      </p>
+                    </a>
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>5.133,33
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/accesoriosanimales/buzoconcapucha .png"
+                        alt="buzo con capucha de algodon a botones de perro"
+                        class="w-100 h-100 rounded"
+                      />
+
+                      <h6 class="d-block text-center text-white">PERRO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Campera gris a botones
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>50.300,60
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>16.766,86
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div
+                    class="rounded-3 border border-3 border-primary-subtle pb-4 pb-md-0"
+                  >
+                    <a href="#">
+                      <img
+                        src="./img/accesoriosanimales/orejeras.png"
+                        alt="Orejeras de gato"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">GATO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Orejeras rosas
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>6000,00
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>2000,00
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 bg-info-subtle col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/accesoriosanimales/chomba.png"
+                        alt="chomba verde perro"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">PERRO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Chomba fina verde
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>12.100,00
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>4.033,33
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/accesoriosanimales/remeraboca.png"
+                        alt="Camiseta De Boca"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">PERRO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Camiseta de boca
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="fw-bold">$</span>12.500,00
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="fw-bold">3</span> Cuotas Sin Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="fw-bold">$</span>4.166,66
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="carousel-item">
+            <h4 class="container text-md-start py-1 text-white border-bottom">
+              Extras Mas Buscados:
+            </h4>
+            <section class="container mt-2 mb-5 pb-3 justify-content-center">
+              <div class="row">
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/extrabuscados/kitdejuguetes.png"
+                        alt="kit juguetes perro"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">PERRO</h6>
+                      <h5 class="d-block text-center text-white">
+                        KIT de juguetes
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="text-dark fw-bold">$</span>30.600,00
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="text-dark fw-bold">3</span> Cuotas Sin
+                      Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="text-dark fw-bold">$</span>10.200,00
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="/img/extrabuscados/collarisabelino.png"
+                        alt="Collar Isabelino de plastico"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">PERRO/GATO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Collar Isabelino
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="text-dark fw-bold">$</span>10.450,64
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="text-dark fw-bold">3</span> Cuotas Sin
+                      Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="text-dark fw-bold">$</span>3.483,55
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/extrabuscados/collariluminoso.png"
+                        alt="Collar iluminoso"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">PERRO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Collar iluminoso
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="text-dark fw-bold">$</span>10.450,64
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="text-dark fw-bold">3</span> Cuotas Sin
+                      Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="text-dark fw-bold">$</span>3.483,55
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 my-4 col-6">
+                  <div class="rounded-3 border border-3 border-primary-subtle">
+                    <a href="#">
+                      <img
+                        src="./img/extrabuscados/bolsomorado.png"
+                        alt="Bolso Morado De gato"
+                        class="w-100 h-100 rounded-bottom"
+                      />
+
+                      <h6 class="d-block text-center text-white">GATO</h6>
+                      <h5 class="d-block text-center text-white">
+                        Bolso morado
+                      </h5>
+                      <p class="d-block text-center text-white">
+                        <span class="text-dark fw-bold">$</span>50.000,00
+                      </p>
+                    </a>
+
+                    <h5 class="d-block text-center text-white">
+                      <span class="text-dark fw-bold">3</span> Cuotas Sin
+                      Interes de
+                    </h5>
+                    <p class="d-block text-center text-white">
+                      <span class="text-dark fw-bold">$</span>16.666,66
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#articulosdestacados"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#articulosdestacados"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <img
+        src="./img/promociones/promocion5.jpg"
+        class="d-block w-100 imagenPromocionesdescuentos container my-5 py-4"
+        alt="promociones"
+      />
+
+      <section class="container mt-5 py-5 text-center text-md-start">
+        <h3 class="border-bottom">Marcas asociadas:</h3>
+      </section>
+
+      <article class="container justify-content-center pb-5 text-center">
+        <section class="row align-items-center">
+          <div class="col-md-2 col-4">
+            <img
+              src="./img/marcasalimentos/friskies.png"
+              alt="friskies"
+              class="w-100"
+            />
+          </div>
+          <div class="col-md-2 col-4">
+            <img
+              src="./img/marcasalimentos/purina.jpg"
+              alt="purina"
+              class="w-100"
+            />
+          </div>
+          <div class="col-md-2 col-4">
+            <img
+              src="./img/marcasalimentos/victor.png"
+              alt="victor"
+              class="w-100"
+            />
+          </div>
+          <div class="col-md-2 col-4 mt-2 mt-md-0">
+            <img
+              src="./img/marcasalimentos/royalcanin.jpg"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="col-md-2 col-4 mt-2 mt-md-0">
+            <img
+              src="./img/marcasalimentos/agility.jpg"
+              alt="skinenners"
+              class="w-100"
+            />
+          </div>
+          <div class="col-md-2 col-4 mt-2 mt-md-0">
+            <img
+              src="./img/marcasalimentos/vitalcan.jpg"
+              alt="vitalcan"
+              class="w-100"
+            />
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="pt-5 text-md-start text-center bg-primary-subtle">
+      <section class="container pb-md-5 pb-3 mb-3">
+        <div class="row">
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img
+              src="../img/tarjetas/amercianexpress.png"
+              alt="amercianexpress"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img src="../img/tarjetas/banelco.png" alt="" class="w-100 h-100" />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img src="../img/tarjetas/cabal.png" alt=" " class="w-100 h-100" />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img
+              src="../img/tarjetas/cencosud.png"
+              alt="tarjeta cencosud"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img
+              src="/img/tarjetas/correoargentino.png"
+              alt=""
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img
+              src="../img/tarjetas/mastercard.png"
+              alt="mastercard"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/mercadolibre.png"
+              alt="mercadolibre"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/naranja.png"
+              alt="naranja"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/pagofacil.png"
+              alt="pagofacil"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/rapipago.png"
+              alt="rapipago"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/trasferencia.png"
+              alt="trasferencia"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/visa.png"
+              alt="visa"
+              class="w-100 h-100"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid">
+        <div class="row text-light">
+          <div class="col-12 col-md-3">
+            <div class="row">
+              <div class="col-12 col-md-12">
+                <p class="text-uppercase mb-4 font-weight-bold">
+                  Petshop Argentina
+                </p>
+                <p>
+                  Tu tienda de confianza para el bienestar y la felicidad de tus
+                  mascotas. Encuentra todo lo que necesitas para tus amigos
+                  peludos con la mejor calidad.
+                </p>
+              </div>
+              <div class="col-12 col-md-12">
+                <img
+                  src="./img/img facu/logo pets.jpg"
+                  alt="logo"
+                  class="ms-5 w-50 d-inline-block imglogo rounded"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <p class="text-uppercase mb-4 font-weight-bold">Categorias</p>
+            <p>
+              <a href="./pages/categoriasPerros.html">Perros</a>
+            </p>
+            <p>
+              <a href="./pages/categoriasGatos.html">Gatos</a>
+            </p>
+            <p>
+              <a href="./pages/Error404.html">Accesorios</a>
+            </p>
+            <p>
+              <a href="./pages/Error404.html">Descuentos</a>
+            </p>
+            <p>
+              <a href="./pages/Error404.html">Marcas</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-3">
+            <p class="text-uppercase mb-4 font-weight-bold">Nosotros</p>
+            <p>
+              <a href="./pages/Error404.html">Nuestras sucursales</a>
+            </p>
+            <p>
+              <a href="./pages/Nosotros.html">Quienes somos</a>
+            </p>
+            <p>
+              <a href="./pages/Error404.html">Trabajá con nosotros</a>
+            </p>
+            <p>
+              <a href="./pages/Contacto.html">Contacto</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-3">
+            <p class="text-uppercase mb-4 font-weight-bold">
+              Seguínos en nuestras redes sociales
+            </p>
+            <p class="font-weight-bold text-light">
+              ¡Mantenete al tanto de las últimas novedades, promociones y
+              consejos para el cuidado de tus mascotas!
+            </p>
+
+            <a class="btn btn-primary btn-floating m-1" href="#!" role="button"
+              ><i class="bi bi-facebook"></i>
+            </a>
+
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #000"
+              href="#!"
+              role="button"
+              ><i class="bi bi-twitter-x"></i>
+            </a>
+
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #dd4b39"
+              href="#!"
+              role="button"
+              ><i class="bi bi-youtube"></i>
+            </a>
+
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #ac2bac"
+              href="#!"
+              role="button"
+              ><i class="bi bi-instagram"></i>
+            </a>
+          </div>
+          <div class="text-center p-3 bg-dark">
+            <p class="text-light">
+              PetShop Argentina © 2024 - Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <section
+      class="modal fade"
+      id="modalInicio"
+      tabindex="-1"
+      aria-labelledby="modalInicioLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalInicioLabel">
+              Iniciar sesion
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container-fluid">
+              <p>Para comenzar ingresa tu email y contraseña</p>
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                  <form>
+                    <div class="input-group my-2">
+                      <label for="email">Email*</label>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"
+                          >@</span
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Ejm: juan123@gmail.com"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                          required
+                          minlength="5"
+                          maxlength="15"
+                        />
+                      </div>
+                    </div>
+                    <div class="my-3">
+                      <label for="contraseña">Contraseña*</label>
+                      <input
+                        type="password"
+                        id="contraseña"
+                        class="form-control"
+                        aria-describedby="passwordHelpBlock"
+                        required
+                        placeholder="Ejm: ABC123@#"
+                        minlength="8"
+                        maxlength="16"
+                      />
+                    </div>
+                    <div class="form-check my-4">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="BotonRecordar"
+                      />
+                      <label class="form-check-label" for="BotonRecordar">
+                        Recordar
+                      </label>
+                    </div>
+                    <a href="./pages/Error404.html"
+                      ><p class="fs-6">recuperar contraseña</p></a
+                    >
+                  </form>
+                  <a
+                    href="./pages/Registro.html"
+                    class="btn btn-outline-primary button text-white"
+                    >Crear cuenta</a
+                  >
+
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary button text-white opacity-80"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalOpciones"
+                  >
+                    iniciar de otra forma
+                  </button>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 d-none d-md-block">
+                  <img
+                    class="container"
+                    src="./img/img facu/pero y gato.jpg"
+                    alt="perro"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="./pages/Error404.html"
+              class="btn btn-primary text-white"
+              type="submit"
+              >Iniciar</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="modal fade"
+      id="modalOpciones"
+      tabindex="-1"
+      aria-labelledby="modalOpcionesLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog row">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalOpcionesLabel">
+              Accede de otra forma
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="list-group">
+              <a
+                href="#"
+                class="btn btn-outline-secondary text-start text-light my-2"
+              >
+                <i class="bi bi-google"></i><span class="mx-3">Usa Google</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary text-start text-light my-2"
+              >
+                <i class="bi bi-facebook"></i
+                ><span class="mx-3">Usa Facebook</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary text-start text-light my-2"
+              >
+                <i class="bi bi-microsoft"></i
+                ><span class="mx-3">Usa Microsoft</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary text-start text-light my-2"
+              >
+                <i class="bi bi-phone"></i
+                ><span class="mx-3">Usa tu Celular</span>
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ropa de mascotas,alimentos de mascotas,accesorios">
+    <meta name="author" content="gonzalez axel , martinez facundo,pereyra guada,villegas rocio"> 
+    <meta name="keywords" content="ropa de mascotas,alimentos de mascotas,accesorios">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>productos de Perros</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary-subtle">
+        <div class="container container-lg">
+          <a class="navbar-brand mx-lg-2" href="../index.html">
+            <img
+              src="../img/img facu/logo pets.jpg"
+              class="d-inline-block imglogo rounded"
+              alt="Logo"
+            />
+            Petshop
+          </a>
+          <button
+            class="navbar-toggler mx-sm-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#barradeNavegacion"
+            aria-controls="barradeNavegacion"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-xl-5" id="barradeNavegacion">
+            <ul
+              class="navbar-nav d-flex flex-column flex-md-column flex-lg-row"
+              id="barradeNavegacion"
+            >
+              <ul
+                class="navbar-nav align-items-start align-items-md-start ms-md-3 my-md-3 align-items-lg-center mx-lg-1 my-lg-1 ms-lg-5"
+              >
+                <li class="nav-item mx-3 mx-md-1 py-lg-1 mx-lg-0">
+                  <a
+                    class="nav-link active py-lg-1"
+                    aria-current="page"
+                    href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item dropdown mx-3 mx-md-1 py-lg-1 mx-lg-0">
+                  <a
+                    class="nav-link dropdown-toggle btn btn-outline-primary"
+                    data-bs-toggle="dropdown"
+                    href="./Contacto.html"
+                    id="MenuDeCategorias"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Productos</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="MenuDeCategorias">
+                    <li>
+                      <a class="dropdown-item" href="./categoriasPerros.html"
+                        >Perros</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../pages/categoriasGatos.html"
+                        >Gatos</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="./Error404.html">Loros</a></li>
+                    <li><a class="dropdown-item" href="./Error404.html">Pez</a></li>
+                    <li><a class="dropdown-item" href="./Error404.html">Caballo</a></li>
+                    <li><a class="dropdown-item" href="./Error404.html">Hamster</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-3 mx-md-1 mx-lg-0 mx-lg-0">
+                  <a
+                    class="nav-link btn btn-outline-primary text-md-start"
+                    type="button"
+                    href="./Contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item mx-3 mx-md-1">
+                  <a
+                    class="nav-link btn btn-outline-primary py-lg-0"
+                    type="button"
+                    href="./Nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+              </ul>
+
+              <form
+                class="d-flex me-5 me-md-5 ms-md-2 pt-md-3 align-items-lg-center mx-lg-2 py-lg-2"
+                role="search"
+              >
+                <input
+                  class="form-control mx-2 mx-lg-0"
+                  type="search"
+                  placeholder="Buscar productos"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-secondary ms-2" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+
+              <ul
+                class="navbar-nav align-items-start align-items-md-start ms-md-3 mt-md-3 mb-md-2 align-items-lg-center m-lg-2 px-lg-1"
+              >
+                <li class="nav-item mx-3 mx-md-1 mb-md-2 my-lg-1 mx-lg-2">
+                  <a
+                    class="nav-link btn btn-outline-primary px-4 px-md-4 py-lg-2 px-lg-3"
+                    type="button"
+                    href="./Carrito.html"
+                    ><i class="bi bi-cart3"></i
+                  ></a>
+                </li>
+
+                <li
+                  class="nav-item nav-item mx-3 mx-md-1 mb-md-2 my-lg-1 mx-lg-2"
+                >
+                  <button
+                    class="btn btn-outline-primary px-4 px-md-4 py-lg-2 px-lg-3"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalInicio"
+                  >
+                    <i class="bi bi-person"></i>
+                  </button>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-primary-subtle">
+      <section class="py-4">
+        <div class="container px-4 px-lg-5 my-5">
+          <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6 border border-muted-link">
+              <img
+                id="product-image"
+                class="card-img-top mb-5 mb-md0"
+                src="../img/img de productos/alimento.png"
+                alt="Alimento para perro Agility"
+              />
+            </div>
+            <div class="col-md-6">
+              <h1 class="display-5 fw-bolder px-2">
+                Agility Perro Adulto X 20 Kg
+              </h1>
+              <div class="px-2">
+                <p class="py-2 px-3 bg-danger text-light fw-bold">
+                  30% DE DESCUENTO
+                </p>
+                <p class="text-danger fw-bold">
+                  PROMOCIÓN EXCLUSIVA EN TIENDA EN LÍNEA. VIGENCIA DEL 14 AL 20
+                  DE JUNIO 2024
+                </p>
+                <p class="display-5">$42.700</p>
+                <p class="display-6"><del>$58.300</del></p>
+              </div>
+              <div class="d-flex">
+                <input
+                  type="number"
+                  class="form-control text-center me-3"
+                  id="input-quantity"
+                  type="num"
+                  value="1"
+                  style="max-width: 5rem"
+                />
+                <a href="../pages/Carrito.html" class="btn btn-outline-primary flex-shrink-0">
+                    <i class="bi bi-basket"></i>
+                    Agregar al carrito
+            </a>
+              </div>
+              <div>
+                <hr />
+                <h3 class="text-primary b px-2">
+                  $38.200 con PetShop easy buy
+                </h3>
+                <h4 class="text-danger px-2">Ahorrarías $3.700</h4>
+                <hr />
+                <p class="text-secondary px-2">
+                  Aprovechá 10% de descuento con Easy Buy y acumulá puntos para
+                  todas tus compras
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid py-3 mb-4">
+        <article class="row border-bottom">
+          <div class="col-md-12">
+            <h2>Descripción del producto</h2>
+            <p class="lead px-5">
+              Agility Perro Adulto es un alimento balanceado y de alta calidad,
+              diseñado específicamente para satisfacer las necesidades
+              nutricionales de los perros adultos de todas las razas. Con un
+              peso neto de 20 kg, este producto es ideal para dueños de mascotas
+              que buscan una alimentación completa y equilibrada para sus
+              compañeros caninos.
+            </p>
+            <p class="lead px-5">
+              Los perros adultos necesitan una alimentación completa y
+              equilibrada que cubra sus requerimientos nutricionales y les
+              brinde salud y vitalidad. Agility Adultos es una fórmula
+              exclusivamente diseñada con ingredientes de alta calidad.
+              <strong
+                >¡Dale a tu perro la nutrición que merece con Agility Perro
+                Adulto y disfruta de ver a tu compañero peludo sano, activo y
+                feliz!</strong
+              >
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="container-fluid my-4 py-4 border-bottom">
+        <article class="row">
+          <div class="col-md-6">
+            <h2>Beneficios del Alimento Agility</h2>
+            <ul class="px-5">
+              <li class="mb-2">
+                Formulado con salmón para perros sensibles. Perros adultos de 1
+                a 7 años con piel sensible con peso mínimo de 10 kg
+              </li>
+              <li class="mb-2">
+                Ácidos grasos Omega, vitaminas y minerales para mantener una
+                piel saludable.
+              </li>
+              <li class="mb-2">
+                Antioxidantes, vitaminas y proteínas para una protección
+                equilibrada.
+              </li>
+              <li class="mb-2">
+                Formulado con salmón para perros sensibles. Perros adultos de 1
+                a 7 años con piel sensible con peso mínimo de 10 kg
+              </li>
+              <li class="mb-2">
+                Ácidos grasos Omega, vitaminas y minerales para mantener una
+                piel saludable.
+              </li>
+              <li class="mb-2">
+                Antioxidantes, vitaminas y proteínas para una protección
+                equilibrada.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="text-center">Valor nutricional garantizado</h2>
+            <table class="table table table-striped text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Macronutriente</th>
+                  <th scope="col">Proporción total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Proteína Cruda (min.)</th>
+                  <td>28,0%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Grasa Cruda (min.)</th>
+                  <td>17,0%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Humedad (máx.)</th>
+                  <td>12,0%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fibra Cruda (máx.)</th>
+                  <td colspan="2">3,5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="container-fluid border border-light shadow bg-info-subtle rounded-3 text-white py-4 my-5"
+      >
+        <article class="row my-4 py-4">
+          <div class="col-md-5 text-center">
+            <h3 class="pb-2">¡No te quedes sin alimento otra vez!</h3>
+            <h4><i class="bi bi-bag-check"></i> PetShop easy buy</h4>
+          </div>
+          <ul class="col-md-7">
+            <li class="mb-2">
+              Hasta 20% de descuento* en tu primer pedido. No es acumulable con
+              otras promociones.
+            </li>
+            <li class="mb-2">
+              Envío gratis en todas tus compras. Puedes pausar o cancelar en
+              cualquier momento.
+            </li>
+            <li class="mb-2">
+              Selecciona Petco Easy Buy, configura tu frecuencia y ¡Nos
+              encargaremos del resto!
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="container-fluid border-bottom my-3 py-3">
+        <h2>Conocé qué opinan nuestros clientes de nosotros</h2>
+        <article class="row">
+          <div class="col-md-4 px-5">
+            <div>
+              <h3>Reseñas de clientes</h3>
+              <p>Seleccione la calificación filtrar por reseñas</p>
+            </div>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                80% de las opiniones
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                12% de las opiniones
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                3% de las opiniones
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-star text-warning"></i>
+                <i class="bi bi-star text-warning"></i>
+                5% de las opiniones
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-star text-warning"></i>
+                0% de las opiniones
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3>Calificación promedio de Clientes</h3>
+            <p>General: ¡Excelente!</p>
+            <img src="img/Captura de pantalla 2024-06-17 144753.png" alt="" />
+          </div>
+          <div class="col-md-4">
+            <h3>Compartí tu opinión</h3>
+            <p>
+              ¿Visitaste nuestras sucursales o compraste online? Nos gustaría
+              conocer más sobre tu experiencia. ¡Ayudanos a mejorar!
+            </p>
+            <button type="button" class="btn btn-primary mb-3">
+              Escribir una reseña
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-primary mb-3">
+              Hacer una pregunta
+              <i class="bi bi-patch-question"></i>
+            </button>
+            <p>
+              ¡Tus opiniones suman puntos para ganar descuentos y y acceder a
+              promociones imperdibles!
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="container-fluid mt-4 py-3 border-bottom">
+        <h2>Experiencias únicas para tu mascota en PetShop AR</h2>
+        <div class="row text-center px-5">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-header">María, 5 estrellas - 18/04/2024</div>
+              <div class="card-body">
+                <h5 class="card-title">¡La mejor opción!</h5>
+                <p class="card-text">
+                  Me ayudaron a encontrar el alimento perfecto para mi perro,
+                  teniendo en cuenta sus necesidades dietéticas específicas.
+                  Además, me dieron excelentes recomendaciones sobre juguetes y
+                  accesorios que han mantenido a mi mascota feliz y saludable.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-bookmark-heart"></i> Me gusta
+                </a>
+                <a href="#" class="btn btn-secondary"
+                  ><i class="bi bi-flag"></i> Reportar
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-header">Jorge, 4 estrellas - 13/05/2024</div>
+              <div class="card-body">
+                <h5 class="card-title">Muy buena atención</h5>
+                <p class="card-text">
+                  El trato que recibí fue excepcional. Tuve una pequeña duda
+                  sobre uno de los productos y el equipo de atención al cliente
+                  fue muy amable y eficiente al resolverla. Se nota que
+                  realmente se preocupan por sus clientes y por las mascotas, lo
+                  cual se refleja en la calidad del servicio.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-bookmark-heart"></i> Me gusta
+                </a>
+                <a href="#" class="btn btn-secondary"
+                  ><i class="bi bi-flag"></i> Reportar
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-header">Sofía, 5 estrellas - 26/03/2024</div>
+              <div class="card-body">
+                <h5 class="card-title">¡Excelentes productos!</h5>
+                <p class="card-text">
+                  Hace poco hice mi primera compra en esta petshop y no podría
+                  estar más satisfecho con la experiencia. Desde el primer
+                  momento, la página web fue fácil de navegar y encontré todo lo
+                  que necesitaba para mi mascota sin problemas. El proceso de
+                  compra fue sencillo y rápido.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-bookmark-heart"></i> Me gusta
+                </a>
+                <a href="#" class="btn btn-secondary"
+                  ><i class="bi bi-flag"></i> Reportar
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-header">Ramiro, 5 estrellas - 03/06/2024</div>
+              <div class="card-body">
+                <h5 class="card-title">Envío rápido y buen trato</h5>
+                <p class="card-text">
+                  Hice mi pedido por la mañana y al día siguiente ya tenía todo
+                  en la puerta de mi casa. Esto es especialmente importante para
+                  mí, ya que siempre busco lo mejor para mi mascota y, en
+                  ocasiones, necesito los productos con urgencia.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-bookmark-heart"></i> Me gusta
+                </a>
+                <a href="#" class="btn btn-secondary"
+                  ><i class="bi bi-flag"></i> Reportar
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid mt-4 py-4">
+        <article class="row">
+          <div class="col-md-12">
+            <h2 id="description-title">
+              Agility Adulto 20 Kg: Nutrición completa para un perro lleno de
+              vitalidad
+            </h2>
+            <p class="px-5 pb-4">
+              ¿Buscas un alimento que le brinde a tu perro adulto la energía y
+              vitalidad que necesita para disfrutar al máximo cada día?
+              <strong>Agility Adulto 20 Kg</strong> es la solución perfecta.
+              Este alimento balanceado completo está elaborado con ingredientes
+              de alta calidad cuidadosamente seleccionados para satisfacer las
+              necesidades nutricionales específicas de los
+              <strong>perros adultos de razas medianas y grandes</strong>.
+              Alimentar a tu perro con un alimento de alta calidad no es solo un
+              gasto, es una inversión en su salud, bienestar y felicidad a largo
+              plazo. Un buen <strong>alimento para perro</strong> proporciona a
+              tu mascota los nutrientes esenciales que necesita para mantener un
+              sistema inmunológico fuerte, una piel y un pelaje saludables,
+              huesos y músculos fuertes, y una digestión óptima. Esto puede
+              traducirse en una vida más larga y saludable para tu perro.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="pt-5 text-md-start text-center bg-primary-subtle">
+      <section class="container pb-md-5 pb-3 mb-3">
+        <div class="row">
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img
+              src="../img/tarjetas/amercianexpress.png"
+              alt="amercianexpress"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img src="../img/tarjetas/banelco.png" alt="" class="w-100 h-100" />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img src="../img/tarjetas/cabal.png" alt=" " class="w-100 h-100" />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img
+              src="../img/tarjetas/cencosud.png"
+              alt="tarjeta cencosud"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img
+              src="/img/tarjetas/correoargentino.png"
+              alt=""
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2 mb-3 mb-md-0">
+            <img
+              src="../img/tarjetas/mastercard.png"
+              alt="mastercard"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/mercadolibre.png"
+              alt="mercadolibre"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/naranja.png"
+              alt="naranja"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/pagofacil.png"
+              alt="pagofacil"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/rapipago.png"
+              alt="rapipago"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/trasferencia.png"
+              alt="trasferencia"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="col-md-1 col-2">
+            <img
+              src="../img/tarjetas/visa.png"
+              alt="visa"
+              class="w-100 h-100"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid">
+        <div class="row text-light">
+          <div class="col-12 col-md-3">
+            <div class="row">
+              <div class="col-12 col-md-12">
+                <p class="text-uppercase mb-4 font-weight-bold">
+                  Petshop Argentina
+                </p>
+                <p>
+                  Tu tienda de confianza para el bienestar y la felicidad de tus
+                  mascotas. Encuentra todo lo que necesitas para tus amigos
+                  peludos con la mejor calidad.
+                </p>
+              </div>
+              <div class="col-12 col-md-12">
+                <img
+                  src="../img/img facu/logo pets.jpg"
+                  alt="logo"
+                  class="ms-5 w-50 d-inline-block imglogo rounded"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <p class="text-uppercase mb-4 font-weight-bold">Categorias</p>
+            <p>
+              <a href="./categoriasPerros.html">Perros</a>
+            </p>
+            <p>
+              <a href="./categoriasGatos.html">Gatos</a>
+            </p>
+            <p>
+              <a href="./Error404.html">Accesorios</a>
+            </p>
+            <p>
+              <a href="../pages/Error404.html">Descuentos</a>
+            </p>
+            <p>
+              <a href="../pages/Error404.html">Marcas</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-3">
+            <p class="text-uppercase mb-4 font-weight-bold">Nosotros</p>
+            <p>
+              <a href="../pages/Error404.html">Nuestras sucursales</a>
+            </p>
+            <p>
+              <a href="./Nosotros.html">Quienes somos</a>
+            </p>
+            <p>
+              <a href="../pages/Error404.html">Trabajá con nosotros</a>
+            </p>
+            <p>
+              <a href="./Contacto.html">Contacto</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-3">
+            <p class="text-uppercase mb-4 font-weight-bold">
+              Seguínos en nuestras redes sociales
+            </p>
+            <p class="font-weight-bold text-light">
+              ¡Mantenete al tanto de las últimas novedades, promociones y
+              consejos para el cuidado de tus mascotas!
+            </p>
+
+            <a class="btn btn-primary btn-floating m-1" href="#!" role="button"
+              ><i class="bi bi-facebook"></i>
+            </a>
+
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #000"
+              href="#!"
+              role="button"
+              ><i class="bi bi-twitter-x"></i>
+            </a>
+
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #dd4b39"
+              href="#!"
+              role="button"
+              ><i class="bi bi-youtube"></i>
+            </a>
+
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #ac2bac"
+              href="#!"
+              role="button"
+              ><i class="bi bi-instagram"></i>
+            </a>
+          </div>
+          <div class="text-center p-3 bg-dark">
+            <p class="text-light">
+              PetShop Argentina © 2024 - Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <section
+      class="modal fade"
+      id="modalInicio"
+      tabindex="-1"
+      aria-labelledby="modalInicioLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalInicioLabel">
+              Iniciar sesion
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container-fluid">
+              <p>Para comenzar ingresa tu email y contraseña</p>
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                  <form>
+                    <div class="input-group my-2">
+                      <label for="email">Email*</label>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"
+                          >@</span
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Ejm: juan123@gmail.com"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                          required
+                          minlength="5"
+                          maxlength="15"
+                        />
+                      </div>
+                    </div>
+                    <div class="my-3">
+                      <label for="contraseña">Contraseña*</label>
+                      <input
+                        type="password"
+                        id="contraseña"
+                        class="form-control"
+                        aria-describedby="passwordHelpBlock"
+                        required
+                        placeholder="Ejm: ABC123@#"
+                        minlength="8"
+                        maxlength="16"
+                      />
+                    </div>
+                    <div class="form-check my-4">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="BotonRecordar"
+                      />
+                      <label class="form-check-label" for="BotonRecordar">
+                        Recordar
+                      </label>
+                    </div>
+                    <a href="./Error404.html"
+                      ><p class="fs-6">recuperar contraseña</p></a
+                    >
+                  </form>
+                  <a
+                    href="./Registro.html"
+                    class="btn btn-outline-primary button text-white"
+                    >Crear cuenta</a
+                  >
+
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary button text-white opacity-80"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalOpciones"
+                  >
+                    iniciar de otra forma
+                  </button>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 d-none d-md-block">
+                  <img
+                    class="container img"
+                    src="../img/img facu/pero y gato.jpg"
+                    alt="perro"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="./Error404.html"
+              class="btn btn-primary text-white"
+              type="submit"
+              >Iniciar</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="modal fade"
+      id="modalOpciones"
+      tabindex="-1"
+      aria-labelledby="modalOpcionesLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog row">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalOpcionesLabel">
+              Accede de otra forma
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="list-group">
+              <a
+                href="#"
+                class="btn btn-outline-secondary text-start text-light my-2"
+              >
+                <i class="bi bi-google"></i><span class="mx-3">Usa Google</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary text-start text-light my-2"
+              >
+                <i class="bi bi-facebook"></i
+                ><span class="mx-3">Usa Facebook</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary text-start text-light my-2"
+              >
+                <i class="bi bi-microsoft"></i
+                ><span class="mx-3">Usa Microsoft</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary text-start text-light my-2"
+              >
+                <i class="bi bi-phone"></i
+                ><span class="mx-3">Usa tu Celular</span>
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
